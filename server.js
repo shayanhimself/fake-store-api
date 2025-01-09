@@ -6,6 +6,7 @@ const path = require('path');
 const dotenv = require('dotenv');
 const dotenvExpand = require('dotenv-expand');
 const https = require('https');
+const fs = require('fs');
 const myEnv = dotenv.config();
 dotenvExpand.expand(myEnv);
 
