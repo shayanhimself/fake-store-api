@@ -46,7 +46,8 @@ const options = {
     cert: fs.readFileSync('/etc/letsencrypt/live/fakestoreapi.shayanaryan.com/fullchain.pem'),
 };
 
-https.createServer(options, app).listen(443, () => {
-    console.log('Server running');
+https.createServer(options, app).listen(port, () => {
+    console.log('Server running on port: ' + port);
 });
+
 module.exports = app;
