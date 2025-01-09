@@ -1,5 +1,5 @@
 //initializes
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
@@ -39,19 +39,22 @@ app.use('/products', productRoute);
 app.use('/carts', cartRoute);
 app.use('/users', userRoute);
 app.use('/auth', authRoute);
+app.listen(port, () => {
+	console.log('connect');
+});
 
 //mongoose
-mongoose.set('useFindAndModify', false);
-mongoose.set('useUnifiedTopology', true);
-mongoose
-	.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
-	.then(() => {
-		app.listen(port, () => {
-			console.log('connect');
-		});
-	})
-	.catch((err) => {
-		console.log(err);
-	});
+//mongoose.set('useFindAndModify', false);
+//mongoose.set('useUnifiedTopology', true);
+//mongoose
+//	.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
+//	.then(() => {
+//		app.listen(port, () => {
+//			console.log('connect');
+//		});
+//	})
+//	.catch((err) => {
+//		console.log(err);
+//	});
 
 module.exports = app;

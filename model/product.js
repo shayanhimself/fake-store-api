@@ -1,22 +1,26 @@
-const mongoose = require('mongoose')
-const schema = mongoose.Schema
+const fs = require('fs');
+const path = require('path');
 
-const productSchema = new schema({
-    id:{
-        type:Number,
-        required:true
-    },
-    title:{
-        type:String,
-        required:true
-    },
-    price:{
-        type:Number,
-        required:true
-    },
-    description:String,
-    image:String,
-    category:String
-})
+class Product {
+	static findOne({ id }) {
+		return new Promise((resolve, reject) => {
+			const filePath = path.join(__dirname, '../data/products', `${id}.json`);
 
-module.exports = mongoose.model('product',productSchema)
+			fs.readFile(filePath, 'utf8', (err, data) => {
+				if (err) {
+					// File not found or other error
+					reject(new Error(`Product with ID ${id} not found`));
+				} else {
+					try {
+						const product = JSON.parse(data);
+						resolve(product);
+					} catch (parseErr) {
+						reject(new Error('Error parsing product JSON'));
+					}
+				}
+			});
+		});
+	}
+}
+
+module.exports = Product;

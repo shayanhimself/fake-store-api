@@ -11,20 +11,23 @@ module.exports.getAllProducts = (req, res) => {
 		.then((products) => {
 			res.json(products);
 		})
-		.catch((err) => console.log(err));
+		.catch((err) => {
+			console.error(err);
+			res.status(500).json({ error: 'Internal Server Error' });
+		});
 };
 
 module.exports.getProduct = (req, res) => {
 	const id = req.params.id;
 
-	Product.findOne({
-		id,
-	})
-		.select(['-_id'])
+	Product.findOne({id})
 		.then((product) => {
 			res.json(product);
 		})
-		.catch((err) => console.log(err));
+		.catch((err) => {
+			console.error(err);
+			res.status(500).json({ error: 'Internal Server Error' });
+		});
 };
 
 module.exports.getProductCategories = (req, res) => {
