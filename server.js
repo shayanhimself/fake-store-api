@@ -5,6 +5,7 @@ const cors = require('cors');
 const path = require('path');
 const dotenv = require('dotenv');
 const dotenvExpand = require('dotenv-expand');
+const https = require('https');
 const myEnv = dotenv.config();
 dotenvExpand.expand(myEnv);
 
@@ -39,22 +40,13 @@ app.use('/products', productRoute);
 app.use('/carts', cartRoute);
 app.use('/users', userRoute);
 app.use('/auth', authRoute);
-app.listen(port, () => {
-	console.log('connect');
+
+const options = {
+    key: fs.readFileSync('/etc/letsencrypt/live/fakestoreapi.shayanaryan.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/fakestoreapi.shayanaryan.com/fullchain.pem'),
+};
+
+https.createServer(options, app).listen(443, () => {
+    console.log('Server running');
 });
-
-//mongoose
-//mongoose.set('useFindAndModify', false);
-//mongoose.set('useUnifiedTopology', true);
-//mongoose
-//	.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
-//	.then(() => {
-//		app.listen(port, () => {
-//			console.log('connect');
-//		});
-//	})
-//	.catch((err) => {
-//		console.log(err);
-//	});
-
 module.exports = app;
