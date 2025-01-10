@@ -43,8 +43,8 @@ app.use('/users', userRoute);
 app.use('/auth', authRoute);
 
 const options = {
-    key: fs.readFileSync('/etc/letsencrypt/live/fakestoreapi.shayanaryan.com/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/fakestoreapi.shayanaryan.com/fullchain.pem'),
+    key: fs.readFileSync('privkey.pem'),
+    cert: fs.readFileSync('fullchain.pem'),
 };
 
 https.createServer(options, app).listen(port, () => {
