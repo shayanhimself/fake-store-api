@@ -1,12 +1,12 @@
 {
     "id": 3,
-    "title": "Grandpa's Vintage Radio - Still Plays Elvis",
-    "price": 169.14,
-    "description": "Used but in great shape! Perfect for when you need nostalgia with functionality.",
+    "title": "This Jacket That Makes You Cooler Than the Weather",
+    "price": 399.99,
+    "description": "Step into ultimate style and comfort with this versatile jacket. Whether you're braving chilly winds or just pretending it’s cold enough to look this good, this jacket's got you covered—literally. Bonus: It has pockets. Yes, REAL ones. 🔥",
     "category": "electronics",
-    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "image": "https://fakestoreapi.shayanaryan.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
     "rating": {
-      "rate": 2.1,
-      "count": 145
+      "rate": 4.8,
+      "count": 312
     }
-  }
+}
