@@ -1,0 +1,12 @@
+{
+    "id": 3,
+    "title": "Grandpa's Vintage Radio - Still Plays Elvis",
+    "price": 169.14,
+    "description": "Used but in great shape! Perfect for when you need nostalgia with functionality.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+      "rate": 2.1,
+      "count": 145
+    }
+  }
