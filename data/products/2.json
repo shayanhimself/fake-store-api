@@ -1,12 +1,12 @@
 {
-    "id": 2,
-    "title": "Mystery Box of Cables - Untangle Your Destiny",
-    "price": 42.61,
-    "description": "May have some scratches, but still does the job like a champ.",
-    "category": "books",
-    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "id": 3,
+    "title": "Ultra-Wide Monitor for Your Ultra-Wide Ambitions",
+    "price": 399.99,
+    "description": "Why settle for regular-sized vision when you can go ultra-wide? This monitor is so expansive, it makes spreadsheets look exciting and gaming feel like you’re inside the game. Perfect for multitasking, movie marathons, and showing off. Side effects may include uncontrollable productivity and an inflated sense of superiority. 🎮",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
     "rating": {
-      "rate": 2.9,
-      "count": 68
+      "rate": 4.8,
+      "count": 312
     }
-  }
+}
