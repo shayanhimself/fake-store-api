@@ -1,12 +1,12 @@
 {
-    "id": 4,
-    "title": "Mystery Box of Cables - Untangle Your Destiny",
-    "price": 42.61,
-    "description": "May have some scratches, but still does the job like a champ.",
-    "category": "books",
-    "image": "https://fakestoreapi.shayanaryan.com/img/.jpg",
-    "rating": {
-      "rate": 2.9,
-      "count": 68
-    }
+  "id": 4,
+  "title": "MacBook Pro: The Laptop That Makes You Feel Smarter",
+  "price": 1999.99,
+  "description": "Introducing the laptop that turns coffee shop visits into productivity sessions (or at least makes it look that way). The MacBook Pro delivers sleek design, unparalleled performance, and just enough ports to keep life interesting. Ideal for coding, creating, or just flexing in public spaces. Pro Tip: Don’t drop it. 💻",
+  "category": "electronics",
+  "image": "https://fakestoreapi.shayanaryan.com/img/71-3HjGNDUL.jpg",
+  "rating": {
+    "rate": 4.7,
+    "count": 527
   }
+}
