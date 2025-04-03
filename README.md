@@ -16,7 +16,7 @@ https://fakestoreapi.shayanaryan.com
 - `GET /products/{id}.json`  
   Get a single product by ID.
 
-
+Disclaimer: At this point there are only 5 products with IDs: 1, 2, 3, 4, 5
 
 ## 📘 Example
 
