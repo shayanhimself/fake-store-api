@@ -7,7 +7,7 @@ This project is a good starting point for mobile developers who need a quick API
 ---
 
 ## 🌐 Base URL
-https://fakestoreapi.shayanaryan.com
+https://shayanhimself.github.io/fake-store-api
 
 ---
 
@@ -23,7 +23,7 @@ Disclaimer: At this point there are only 5 products with IDs: 1, 2, 3, 4, 5
 Here’s an example fetch request in Kotlin via Ktor client:
 
 ```kotlin
-    val product: Product = client.get("https://fakestoreapi.shayanaryan.com/products/1.json").body()
+    val product: Product = client.get("https://shayanhimself.github.io/fake-store-api/products/1.json").body()
 ```
 ---
 
